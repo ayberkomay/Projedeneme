@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1700866300 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
+1700923113 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
 	"insertion.h"
 	<algorithm>
 	<vector>
@@ -7,15 +7,22 @@
 1700858641 c:\users\ayber\documents\projetest\projedeneme\insertion.h
 	<vector>
 
-1700908870 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
+1700929598 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
 	<iostream>
 	<vector>
 	"insertion.h"
+	"heap.h"
 
-1700865115 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
+1700929198 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
 	"heap.h"
 	<algorithm>
 	<vector>
 
-1700860550 c:\users\ayber\documents\projetest\projedeneme\heap.h
+1700922947 c:\users\ayber\documents\projetest\projedeneme\heap.h
+	<vector>
+
+1700931976 source:c:\users\ayber\documents\projetest\projedeneme\untitled6.cc
+	"heap.h"
+	<algorithm>
+	<vector>
 

@@ -4,10 +4,11 @@
 
 std::vector<int>isort(std::vector<int>unsarray)
 {
-    for (size_t f=0; f+1<=unsarray.size();f++)
+    const size_t us=unsarray.size();
+    for (size_t f=0; f+1<=us;f++)
     {
         int s=f+1;
-        while(unsarray[f]>unsarray[s]&&f<unsarray.size())
+        while(unsarray[f]>unsarray[s]&&f<us) //f>=0?
         {
             std::swap(unsarray[f],unsarray[s]);
             f--;
