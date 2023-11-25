@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1700866300 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
+	"insertion.h"
+	<algorithm>
+	<vector>
+
+1700858641 c:\users\ayber\documents\projetest\projedeneme\insertion.h
+	<vector>
+
+1700908870 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
+	<iostream>
+	<vector>
+	"insertion.h"
+
+1700865115 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
+	"heap.h"
+	<algorithm>
+	<vector>
+
+1700860550 c:\users\ayber\documents\projetest\projedeneme\heap.h
+
