@@ -1,28 +1,59 @@
 # depslib dependency file v1.0
-1700923113 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
+140710677107114 <<<<<<< HEAD
+
+1701094141 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
 	"insertion.h"
 	<algorithm>
 	<vector>
+	<chrono>
 
-1700858641 c:\users\ayber\documents\projetest\projedeneme\insertion.h
+1701056787 276f (update for heap and insertion)
+	"insertion.h"
+	<algorithm>
+	<vector>
+	<chrono>
+	<iostream>
+	<vector>
+	"insertion.h"
+	"heap.h"
+	"heap.h"
+	<algorithm>
+	<vector>
+	<chrono>
+
+1701094141 c:\users\ayber\documents\projetest\projedeneme\insertion.h
 	<vector>
 
-1700929598 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
+1701050638 D
+
+1701094141 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
 	<iostream>
 	<vector>
 	"insertion.h"
 	"heap.h"
 
-1700929198 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
+1701094141 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
 	"heap.h"
 	<algorithm>
 	<vector>
+	<chrono>
 
-1700922947 c:\users\ayber\documents\projetest\projedeneme\heap.h
+1701093887 c:\users\ayber\documents\projetest\projedeneme\heap.h
 	<vector>
 
 1700931976 source:c:\users\ayber\documents\projetest\projedeneme\untitled6.cc
 	"heap.h"
 	<algorithm>
 	<vector>
+
+1701093887 source:c:\users\ayber\documents\projetest\projedeneme\radix.cc
+	"radix.h"
+	<algorithm>
+	<vector>
+	<chrono>
+
+1701093887 c:\users\ayber\documents\projetest\projedeneme\radix.h
+	<vector>
+
+1701093887 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
 

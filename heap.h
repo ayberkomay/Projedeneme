@@ -2,6 +2,6 @@
 #define HEAPSORT_H
 #include <vector>
 
-std::vector<int>hsort(std::vector<int>unsarray);
+std::vector<int>hsort(std::vector<int>&unsarray);
 
 #endif

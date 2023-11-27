@@ -1,67 +1,57 @@
 #include "heap.h"
 #include <algorithm>
 #include <vector>
-
-
-std::vector<int>hsort(std::vector<int>unsarray)
+#include <chrono>
+//use clock
+void heap(std::vector<int> &unsarray,size_t first, size_t usSec)
 {
-
-    size_t us=unsarray.size();
-    int maxf;
-    maxf=us/2;
-    bool swapped;
-    do
+    while(first*2+1<=usSec)
     {
-        swapped =false;
-        for (size_t f=0; f<=us; f++)
+    size_t second=first*2+1;
+    size_t third=second+1;
+    size_t largest=first;
+        //following 2 if for finding the largest number between the second and third numbers.
+        if (unsarray[second]>unsarray[first]&&unsarray[second]>unsarray[third])
         {
-            int s=f+f+1;
-            int t=f+f+2;
-
-            size_t largest=std::max(unsarray[t],unsarray[s]);
-            if(unsarray[f]!=largest && s<us && t<us)
-            {
-                std::swap(unsarray[f],unsarray[largest]);
-                swapped =true;
-                if(f=us)
-                {
-                    swapped=false;
-                }
-            }
+            largest=second;
         }
+        if (unsarray[third]>unsarray[first]&&unsarray[third]>unsarray[second])
+        {
+            largest=third;
+        }
+
+    if(largest!=first)
+    {
+        std::swap(unsarray[first], unsarray[largest]);
+        first=largest;
     }
-    while(swapped);
-
-    return unsarray;
+    else
+    {
+        return;
+    }
+}
 }
 
-/*
-#include "heap.h"
-#include <algorithm>
-#include <vector>
-
-void heapsort(std::vector<int> &arr, int us, int f)
-{
-    heapsort(arr,us,f)
-}
-
-std::vector<int>hsort(std::vector<int>unsarray)
+std::vector<int>hsort(std::vector<int>&unsarray)
 {
     size_t us=unsarray.size();
-    int maxf;
-    maxf<=us/2;
-    for (size_t f=0; f<=maxf; f++)
-    {
-        int s=f+f+1;
-        int t=f+f+2;
 
-        int largest=std::max(unsarray[t],unsarray[s]);
-            if(unsarray[f]<largest)
-            {
-                std::swap(unsarray[f],unsarray[largest]);
-            }
+    int maxf=us/2-1;
+    int minf=us-1;
+
+    while(maxf>=0)
+    {
+        heap(unsarray,maxf,minf);
+        maxf--;
     }
+    while(minf>0)
+    {
+        std::swap(unsarray[0],unsarray[minf]);
+        heap(unsarray,0,minf-1);
+        minf--;
+    }
+
     return unsarray;
 }
 
-*/
+//it's still not wirking. i'll update

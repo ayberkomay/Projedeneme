@@ -1,20 +1,26 @@
 #include "insertion.h"
 #include <algorithm>
 #include <vector>
-
-std::vector<int>isort(std::vector<int>unsarray)
-{
-    const size_t us=unsarray.size();
-    for (size_t f=0; f+1<=us;f++)
+#include <chrono>
+//use clock
+std::vector<int>isort(std::vector<int>&unsarray)
+{   //size_t for positive integers
+    size_t us=unsarray.size();
+    for (size_t first=0; first+1<us; first++)
     {
-        int s=f+1;
-        while(unsarray[f]>unsarray[s]&&f<us) //f>=0?
+        size_t second=first+1;
+        while(unsarray[first]>unsarray[second]&&second>=1)
         {
-            std::swap(unsarray[f],unsarray[s]);
-            f--;
-            s--;
+            std::swap(unsarray[first],unsarray[second]);
+            if(!(first==0))
+            {
+                first--;
+                second--;
+            }
         }
     }
-    return unsarray;
+
+   return unsarray;
 }
 
+//updated because i got error

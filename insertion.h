@@ -2,6 +2,6 @@
 #define INSERTION_H
 #include <vector>
 
-std::vector<int>isort(std::vector<int>unsarray);
+std::vector<int>isort(std::vector<int>&unsarray);
 
 #endif
