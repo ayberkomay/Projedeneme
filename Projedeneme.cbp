@@ -36,6 +36,10 @@
 		<Unit filename="insertion.cc" />
 		<Unit filename="insertion.h" />
 		<Unit filename="main.cc" />
+		<Unit filename="quick.cc" />
+		<Unit filename="quick.h" />
+		<Unit filename="radix.cc" />
+		<Unit filename="radix.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 140710677107114 <<<<<<< HEAD
 
-1701094141 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
+1701110551 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
 	"insertion.h"
 	<algorithm>
 	<vector>
@@ -26,13 +26,16 @@
 
 1701050638 D
 
-1701094141 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
+1701135564 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
 	<iostream>
 	<vector>
+	<algorithm>
 	"insertion.h"
 	"heap.h"
+	"radix.h"
+	"quick.h"
 
-1701094141 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
+1701135564 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
 	"heap.h"
 	<algorithm>
 	<vector>
@@ -46,7 +49,7 @@
 	<algorithm>
 	<vector>
 
-1701093887 source:c:\users\ayber\documents\projetest\projedeneme\radix.cc
+1701135564 source:c:\users\ayber\documents\projetest\projedeneme\radix.cc
 	"radix.h"
 	<algorithm>
 	<vector>
@@ -55,5 +58,12 @@
 1701093887 c:\users\ayber\documents\projetest\projedeneme\radix.h
 	<vector>
 
-1701093887 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
+1701135726 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
+	"quick.h"
+	<algorithm>
+	<vector>
+	<chrono>
+
+1701125161 c:\users\ayber\documents\projetest\projedeneme\quick.h
+	<vector>
 

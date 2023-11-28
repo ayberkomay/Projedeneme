@@ -3,33 +3,35 @@
 #include <vector>
 #include <chrono>
 //use clock
+
+//UPDATED. IT WORKS
 void heap(std::vector<int> &unsarray,size_t first, size_t usSec)
 {
     while(first*2+1<=usSec)
     {
-    size_t second=first*2+1;
-    size_t third=second+1;
-    size_t largest=first;
+        size_t second=first*2+1;
+        size_t third=second+1;
+        size_t largest=first;
         //following 2 if for finding the largest number between the second and third numbers.
-        if (unsarray[second]>unsarray[first]&&unsarray[second]>unsarray[third])
+        if (second<=usSec&&unsarray[second]>unsarray[largest])
         {
             largest=second;
         }
-        if (unsarray[third]>unsarray[first]&&unsarray[third]>unsarray[second])
+        if (third<=usSec&&unsarray[third]>unsarray[largest])
         {
             largest=third;
         }
 
-    if(largest!=first)
-    {
-        std::swap(unsarray[first], unsarray[largest]);
-        first=largest;
+        if(largest!=first)
+        {
+            std::swap(unsarray[first], unsarray[largest]);
+            first=largest;
+        }
+        else
+        {
+            return;
+        }
     }
-    else
-    {
-        return;
-    }
-}
 }
 
 std::vector<int>hsort(std::vector<int>&unsarray)
@@ -41,7 +43,7 @@ std::vector<int>hsort(std::vector<int>&unsarray)
 
     while(maxf>=0)
     {
-        heap(unsarray,maxf,minf);
+        heap(unsarray,maxf,us-1);
         maxf--;
     }
     while(minf>0)
@@ -54,4 +56,3 @@ std::vector<int>hsort(std::vector<int>&unsarray)
     return unsarray;
 }
 
-//it's still not wirking. i'll update
