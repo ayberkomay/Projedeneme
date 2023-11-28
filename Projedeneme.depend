@@ -26,7 +26,7 @@
 
 1701050638 D
 
-1701135564 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
+1701135773 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
 	<iostream>
 	<vector>
 	<algorithm>
@@ -58,7 +58,7 @@
 1701093887 c:\users\ayber\documents\projetest\projedeneme\radix.h
 	<vector>
 
-1701135726 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
+1701202026 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
 	"quick.h"
 	<algorithm>
 	<vector>

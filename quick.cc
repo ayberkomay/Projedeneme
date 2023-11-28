@@ -4,50 +4,41 @@
 #include <chrono>
 //use clock
 //Hoare partitioning scheme from website
-void quicksort(std::vector<int>&unsarray)
+// it works
+void quicksort(std::vector<int>&unsarray, size_t first, size_t second)
 {
 
+    size_t pivot=first;
+    size_t left=pivot+1;
+    size_t right=second;
+
+    if(first<second)
+
+    {
+        while(left<right)
+        {
+            while(left<=right&&unsarray[left]<unsarray[pivot])
+                left++;
+            while(left<=right&&unsarray[right]>unsarray[pivot])
+                right--;
+            if (left<=right&&unsarray[left]>unsarray[right])
+                std::swap(unsarray[left], unsarray[right]);
+        }
+        while(right>first&&unsarray[right]>=unsarray[pivot])
+            right--;
+
+        std::swap(unsarray[right],unsarray[pivot]);
+
+        if(right>first)
+            quicksort(unsarray,first,right-1);
+        quicksort(unsarray,right+1,second);
+    }
 }
-//I couldn't write good in short time. I'll update at all.
 std::vector<int>qsort(std::vector<int>&unsarray)
 {
     size_t us=unsarray.size();
 
-    int pivot=0;
-    int left=1;
-    int right=us-1;
-    int pArr=unsarray[pivot];
-    int lArr=unsarray[left];
-    int rArr=unsarray[right];
-
-
-    const int sLeft=left; //for continue
-    const int sRight=right;
-    while(true)
-    {
-        if(lArr<pArr&&!(lArr>rArr))
-        {
-            if(lArr>rArr)
-            {
-                std::swap(lArr,rArr);
-                left=sLeft;
-                right=sRight;
-            }
-            left++;
-        }
-        else
-        {
-            std::swap(lArr,rArr);
-            left=sLeft;
-            right=sRight;
-            right--;
-        }
-        if(right>left)
-        {
-            std::swap(lArr,pArr);
-            break;
-        }
-    }
+    quicksort(unsarray,0,us-1);
 
     return unsarray;
 }
