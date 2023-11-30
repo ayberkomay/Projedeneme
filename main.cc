@@ -1,42 +1,77 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include "insertion.h"
-#include "heap.h"
-#include "radix.h"
-#include "quick.h"
+#include <chrono>//for calculating time
+#include <fstream>//for output file
+#include <random>//for random number generator
+#include "insertion.h"//insertion sort
+#include "heap.h"//heap sort
+#include "radix.h"//radix sort
+#include "quick.h"//quick sort
+#include "hybrid.h"//hybrid sort
+
+std::vector<int> randomNumber(int size)
+{
+    std::random_device ranD;//for the better random number
+    std::mt19937 mt(ranD());//it's engine
+
+    std::vector<int> gRand(size);
+    for (int i=0;i<size;i++)
+        gRand[i]=mt()%(size*10);
+
+    return gRand;
+}
 
 int main()
 {
-    std::vector<int>numbers= {3,7,1,8,2,9,10,5,2,6,4,3,1};
-    std::vector<int>realnumbers= {1,1,2,2,3,3,4,5,6,7,8,9,10};
-    numbers=isort(numbers);
-    if(numbers==realnumbers)
-        std::cout<<"1 True"<<std::endl;
-    else
-        std::cout<<"1 False"<<std::endl;
+    std::vector<int> sizes;
+    for(size_t y=1; y<10000; y*=10)
+    {
+        for(size_t x=1; x<=10; x++)
+        {
+            int size=x*y;
+            sizes.push_back(size);
+        }
+    }
 
-    std::vector<int>numbers2= {8,5,7,4,0,2,3,1,9};//7,1,8,5,0,9,3,2,4
-    std::vector<int>realnumbers2= {0,1,2,3,4,5,7,8,9};//9,5,8,4,0,7,3,2,1
-    numbers2=hsort(numbers2);
-    if(numbers2==realnumbers2)
-        std::cout<<"2 True"<<std::endl;
-    else
-        std::cout<<"2 False"<<std::endl;
+    std::ofstream file("outputfile.txt");//save the results in file
 
-    std::vector<int>numbers3= {5,123,17,799,548,2,73,8,42};
-    std::vector<int>realnumbers3= {2,5,8,17,42,73,123,548,799};
-    numbers3=rsort(numbers3);
-    if(numbers3==realnumbers3)
-        std::cout<<"3 True"<<std::endl;
-    else
-        std::cout<<"3 False"<<std::endl;
+    for(int size:sizes)
+    {
+        std::cout<<"Vector size: "<<size<<"\n";//shows vector size
+        std::vector<int>unsarray=randomNumber(size);
+        file<<"Vector size: "<<size<<"\n";//add the vector size in file.
 
-    std::vector<int>numbers4= {3,7,1,8,2,9,10,5,2,6,4,3,1};
-    std::vector<int>realnumbers4= {1,1,2,2,3,3,4,5,6,7,8,9,10};
-    numbers4=qsort(numbers4);
-    if(numbers4==realnumbers4)
-        std::cout<<"4 True"<<std::endl;
-    else
-        std::cout<<"4 False"<<std::endl;
+        //sorting and calculating the time parts for every sorts then saves in outputfile.txt
+        auto start=std::chrono::high_resolution_clock::now();
+        isort(unsarray);
+        auto end=std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double,std::milli>result=end-start;
+        std::cout<<"Insertion sort time for size "<<result.count()<<" ms\n";
+        file<<"Insertion sort time for size "<<result.count()<<" ms\n";
+
+        auto start2=std::chrono::high_resolution_clock::now();
+        qsort(unsarray);
+        auto end2=std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double,std::milli>result2=end2-start2;
+        std::cout<<"Quick sort time for size "<<result2.count()<<" ms\n";
+        file<<"Quick sort time for size "<<result2.count()<<" ms\n";
+        auto start3=std::chrono::high_resolution_clock::now();
+        rsort(unsarray);
+
+        auto end3=std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double,std::milli>result3=end3-start3;
+        std::cout<<"Radix sort time for size "<<result3.count()<<" ms\n";
+        file<<"Radix sort time for size "<<result3.count()<<" ms\n";
+
+        auto start4=std::chrono::high_resolution_clock::now();
+        hsort(unsarray);
+        auto end4=std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double,std::milli>result4=end4-start4;
+        std::cout<<"Heap sort time for size "<<result4.count()<<" ms\n";
+        file<<"Heap sort time for size "<<result4.count()<<" ms\n";
+
+        file<<"\n\n";
+    }
+    file.close();
+    return 0;
 }

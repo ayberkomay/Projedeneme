@@ -1,0 +1,280 @@
+Vector size: 1
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 2
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 3
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 4
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 5
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 6
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 7
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 8
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 9
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 10
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 10
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 20
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 30
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 40
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 1.0001 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 50
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 60
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 70
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 80
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 1.0033 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 90
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 100
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 1.0024 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 100
+Insertion sort time for size 0 ms
+Quick sort time for size 0 ms
+Radix sort time for size 0.988 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 200
+Insertion sort time for size 1.0013 ms
+Quick sort time for size 0.9983 ms
+Radix sort time for size 1.9992 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 300
+Insertion sort time for size 0.985 ms
+Quick sort time for size 0.9994 ms
+Radix sort time for size 5.0076 ms
+Heap sort time for size 0.993 ms
+
+
+Vector size: 400
+Insertion sort time for size 0.9995 ms
+Quick sort time for size 0.9967 ms
+Radix sort time for size 7.0011 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 500
+Insertion sort time for size 2.0023 ms
+Quick sort time for size 0.9983 ms
+Radix sort time for size 9.0081 ms
+Heap sort time for size 0.996 ms
+
+
+Vector size: 600
+Insertion sort time for size 2.0003 ms
+Quick sort time for size 0.9989 ms
+Radix sort time for size 15.9945 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 700
+Insertion sort time for size 3.0012 ms
+Quick sort time for size 0.9997 ms
+Radix sort time for size 19.0134 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 800
+Insertion sort time for size 4.5282 ms
+Quick sort time for size 2.9986 ms
+Radix sort time for size 26.0013 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 900
+Insertion sort time for size 6.0031 ms
+Quick sort time for size 4.0026 ms
+Radix sort time for size 29.9973 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 1000
+Insertion sort time for size 7.9989 ms
+Quick sort time for size 4.0071 ms
+Radix sort time for size 39.5251 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 1000
+Insertion sort time for size 7.9995 ms
+Quick sort time for size 1.9978 ms
+Radix sort time for size 33.0003 ms
+Heap sort time for size 0 ms
+
+
+Vector size: 2000
+Insertion sort time for size 25.5324 ms
+Quick sort time for size 10.9999 ms
+Radix sort time for size 161.58 ms
+Heap sort time for size 0.9906 ms
+
+
+Vector size: 3000
+Insertion sort time for size 61.6115 ms
+Quick sort time for size 27.0007 ms
+Radix sort time for size 359.416 ms
+Heap sort time for size 0.9978 ms
+
+
+Vector size: 4000
+Insertion sort time for size 101.098 ms
+Quick sort time for size 43.9971 ms
+Radix sort time for size 712.478 ms
+Heap sort time for size 2.0063 ms
+
+
+Vector size: 5000
+Insertion sort time for size 159.038 ms
+Quick sort time for size 69.5845 ms
+Radix sort time for size 968.744 ms
+Heap sort time for size 1.5227 ms
+
+
+Vector size: 6000
+Insertion sort time for size 225.703 ms
+Quick sort time for size 100.67 ms
+Radix sort time for size 1393.5 ms
+Heap sort time for size 2.9673 ms
+
+
+Vector size: 7000
+Insertion sort time for size 307.777 ms
+Quick sort time for size 134.096 ms
+Radix sort time for size 1875.69 ms
+Heap sort time for size 3.0021 ms
+
+
+Vector size: 8000
+Insertion sort time for size 395.646 ms
+Quick sort time for size 185.916 ms
+Radix sort time for size 2473.66 ms
+Heap sort time for size 4.0094 ms
+
+
+Vector size: 9000
+Insertion sort time for size 517.939 ms
+Quick sort time for size 222.16 ms
+Radix sort time for size 3114.29 ms
+Heap sort time for size 4.0182 ms
+
+
+Vector size: 10000
+Insertion sort time for size 620.48 ms
+Quick sort time for size 274.798 ms
+Radix sort time for size 3858.41 ms
+Heap sort time for size 5.0484 ms
+
+

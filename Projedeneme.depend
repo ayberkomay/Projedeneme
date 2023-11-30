@@ -1,11 +1,10 @@
 # depslib dependency file v1.0
 140710677107114 <<<<<<< HEAD
 
-1701110551 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
+1701293156 source:c:\users\ayber\documents\projetest\projedeneme\insertion.cc
 	"insertion.h"
 	<algorithm>
 	<vector>
-	<chrono>
 
 1701056787 276f (update for heap and insertion)
 	"insertion.h"
@@ -21,25 +20,27 @@
 	<vector>
 	<chrono>
 
-1701094141 c:\users\ayber\documents\projetest\projedeneme\insertion.h
+1701277291 c:\users\ayber\documents\projetest\projedeneme\insertion.h
 	<vector>
 
 1701050638 D
 
-1701135773 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
+1701305216 source:c:\users\ayber\documents\projetest\projedeneme\main.cc
 	<iostream>
 	<vector>
-	<algorithm>
+	<chrono>
+	<fstream>
+	<random>
 	"insertion.h"
 	"heap.h"
 	"radix.h"
 	"quick.h"
+	"hybrid.h"
 
-1701135564 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
+1701293156 source:c:\users\ayber\documents\projetest\projedeneme\heap.cc
 	"heap.h"
 	<algorithm>
 	<vector>
-	<chrono>
 
 1701093887 c:\users\ayber\documents\projetest\projedeneme\heap.h
 	<vector>
@@ -49,21 +50,36 @@
 	<algorithm>
 	<vector>
 
-1701135564 source:c:\users\ayber\documents\projetest\projedeneme\radix.cc
+1701293156 source:c:\users\ayber\documents\projetest\projedeneme\radix.cc
 	"radix.h"
 	<algorithm>
 	<vector>
-	<chrono>
 
-1701093887 c:\users\ayber\documents\projetest\projedeneme\radix.h
+1701277289 c:\users\ayber\documents\projetest\projedeneme\radix.h
 	<vector>
 
-1701202026 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
+1701293156 source:c:\users\ayber\documents\projetest\projedeneme\quick.cc
 	"quick.h"
 	<algorithm>
 	<vector>
-	<chrono>
 
-1701125161 c:\users\ayber\documents\projetest\projedeneme\quick.h
+1701277291 c:\users\ayber\documents\projetest\projedeneme\quick.h
 	<vector>
+
+1701293156 source:c:\users\ayber\documents\projetest\projedeneme\test.cc
+	<iostream>
+	<vector>
+	<algorithm>
+	"insertion.h"
+	"heap.h"
+	"radix.h"
+	"quick.h"
+
+1701290462 c:\users\ayber\documents\projetest\projedeneme\hybrid.h
+	<vector>
+	<iostream>
+	"insertion.h"
+	"heap.h"
+	"radix.h"
+	"quick.h"
 
