@@ -33,6 +33,7 @@
 		</Compiler>
 		<Unit filename="heap.cc" />
 		<Unit filename="heap.h" />
+		<Unit filename="hybrid.h" />
 		<Unit filename="insertion.cc" />
 		<Unit filename="insertion.h" />
 		<Unit filename="main.cc" />
@@ -40,6 +41,7 @@
 		<Unit filename="quick.h" />
 		<Unit filename="radix.cc" />
 		<Unit filename="radix.h" />
+		<Unit filename="test.cc" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
